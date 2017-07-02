@@ -1,0 +1,129 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Grade Calculator - Physics 2211/2212</title>
+		<link rel ='stylesheet' type = 'text/css' media = 'screen' href = 'wmgstylesheet.css' />
+    <script src="wmgscript.js" type="text/javascript"></script>
+		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+	</head>
+
+</script>
+	<body class="parallax">
+		<div id='main'>
+			<!-- <div id='navegation'>
+				<ul class='sidebar'>
+  				<li><a class='sidebar' href="index.html">Home</a></li>
+ 					<li><a class='sidebar' href="gandalf.jpg">A Single Picture of Gandalf</a></li>
+  				<li><a class='sidebar' href="https://www.gofundme.com/give-me-money-2vxazmk">Donate </a></li>
+				</ul>
+			</div> -->
+			<div id="header">
+				<h1 class = 'top'>Grade Calculator</h1>
+				<h2 class="top">Physics 2211/2212</h2>
+				<!-- <h4 class = 'top'>(Because WebAssign is a flake.)</h4> -->
+			</div>
+    </div>
+    <p id='description'>Fill in the following fields to calculate your course grade. Leave no fields blank, and fill in appropriate numbers from 0 to 100 (or higher if you did extra homework.)</p>
+
+
+
+		<form id='calculator' name='mycalc' action="">
+			<div class="content">
+				<div class="inputs">
+					<h3>Core Points</h3>
+					<table>
+						<tr>
+							<td></td>
+							<td><b>1</b></td>
+							<td><b>2</b></td>
+							<td><b>3</b></td>
+						</tr>
+						<tr>
+							<th><b>In-Class Tests:</b></th>
+							<td><input size="3" type="text" name="test1" autofocus>%</td>
+							<td><input size="3" type="text" name="test2">%</td>
+							<td><input size="3" type="text" name="test3">%</td>
+						</tr>
+					</table>
+					<br>
+					<table>
+						<tr>
+							<td class="examTable"></td>
+							<td class="examTable"><b>Part 1</b></td>
+							<td class="examTable"><b>Part 2</b></td>
+						</tr>
+						<tr>
+							<th class="examTable"><b>Final Exam:</b></th>
+							<td class="examTable"><input size="3" type="text" name="exam1">%</td>
+							<td class="examTable"><input size="3" type="text" name="exam2">%</td>
+						</tr>
+					</table>
+					<p id="test_exam"></p>
+					<br>
+					<table>
+						<tr>
+							<td></td>
+							<td><b>Quizzes</b></td>
+							<td><b>Assignments</b></td>
+							<td><b>Checkpoints</b></td>
+						</tr>
+						<tr>
+							<th><b>Lab:</b></th>
+							<td><input size="3" type="text" name="labQuiz">%</td>
+							<td><input size="3" type="text" name="labAssign">%</td>
+							<td><input size="3" type="text" name="labCheck">%</td>
+						</tr>
+					</table>
+					<p id="lab"></p>
+					<br>
+					<br>
+					<h3>Bucket Points</h3>
+					<table>
+						<tr>
+							<th class="bucketTable"><b>Homework:</b></th>
+							<td class="bucketTable"><input size="3" type="text" name="hw">%</td>
+							<td class="bucketTable"><p id="hw"></p></td>
+							<td class="bucketTable"><p id="extraHW"></p></td>
+						</tr>
+						<tr>
+							<th class="bucketTable"><b>Participation:</b></th>
+							<td class="bucketTable"><input size="3" type="text" name="partic">%</td>
+							<td class="bucketTable"><p id="part"></p></td>
+						</tr>
+						<tr>
+							<th class="bucketTable"><b>Optional Assignments:</b></th>
+							<td class="bucketTable"><input size="3" type="text" name="opt">%</td>
+							<td class="bucketTable"><p id="opt"></p></td>
+						</tr>
+						<tr>
+							<th class="bucketTable"><b>Reading Assignments:</b></th>
+							<td class="bucketTable"><input size="3" type="text" name="reading">%</td>
+							<td class="bucketTable"><p id="read"></p></td>
+						</tr>
+						<tr>
+							<th class="bucketTable"><b>Bonus Points:</b></th>
+							<td class="bucketTable"><input size="3" type="text" name="bonus">%</td>
+							<td class="bucketTable"><p id="bonus"></p></td>
+						</tr>
+					</table>
+					<p id="bucket"></p>
+					<br>
+				</div>
+			</div>
+
+			<div class="bottom">
+				<p id="finalGrade"></p>
+				<br>
+				<table id="buttons">
+					<tr>
+						<td><input type="button" onclick="testResults(this.form)" value="Submit"></td>
+						<td><input type="reset" class="button" value="Clear"></td>
+					</tr>
+				</table>
+
+			</div>
+    	<!-- <br>
+    	<span id='small'>This website was created by David King</span> -->
+		</form>
+	</body>
+</html>
