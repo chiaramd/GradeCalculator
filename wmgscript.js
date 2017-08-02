@@ -102,6 +102,10 @@ function testResults (form) {
     var bucketPoints = hwPoints + particPoints + optPoints + readingPoints + bonusPoints;
     bucketPoints = Math.min(10,bucketPoints);
 
+    var extraCredPoints = parseFloat(form.extraCred.value);
+    extraCredPoints = Math.min(extraCredPoints, 1);
+    extraCredPoints = Math.max(extraCredPoints, 0);
+
 
 
     // var bool2 = fin !== fin
@@ -114,7 +118,7 @@ function testResults (form) {
     // var bucket2 = Math.min(10,(cl*3 + hw*5 + opt*3 + wiki*2 + read + lect)/100)/.1;
 
 
-    var finalPoints = corePoints + bucketPoints + extraHWPoints;
+    var finalPoints = corePoints + bucketPoints + extraHWPoints + extraCredPoints;
     var roundedFinal = Math.round(finalPoints)
     var grade;
 
